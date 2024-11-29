@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon"  href="logo.png">
     <title>M.Muzammil</title>
 </head>
 <style>
@@ -147,7 +146,7 @@ span{
     border: 0.2rem solid #b74b4b;
     font-size: 2rem;
     border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 3rem 3.5rem 3rem 0;
     transition: 0.3s ease;
     color: #b74b4b;
 }
@@ -157,6 +156,31 @@ span{
     background-color: #b74b4b;
     box-shadow: 0  0 25px #b74b4b;
 }
+
+
+
+.socials-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 5.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
+.socials-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0  0 25px #b74b4b;
+}
+
+
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -209,16 +233,16 @@ span{
         content: "Web Developer";
     }
     21%, 40%{
-        content: "Developer";
+        content: "";
     }
     41%, 60%{
         content: "Web Designer";
     }
     61%, 80%{
-        content: "Youtuber";
+        content: "";
     }
     81%, 100%{
-        content: "Script Writer";
+        
     }
 }
 @media (max-width: 1000px){
@@ -246,14 +270,16 @@ span{
 <body>
     <header>
     <a href="#" class="logo" style="font-family: Edwardian Script ITC">M.Muzammil</a>
-    <nav>
-        <a href="#" class="active">Home</a>
-        <a href="About Us.html">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Services</a>
-        <a href="#">Login</a>
+    
+         <div class="socials-icons" >
+            <a href="#"><i class="fa fa-home"></i></a>
+            <a href="About Us.html"><i class="fa fa-user"></i></a>
+            <a href="#"><i class="fa fa-phone"></i></a>
+            <a href="#"><i class="fas fa-cogs"></i></a>
+            <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+        </div>
         
-    </nav>
+    
 </header>
 <section class="home">
     <div class="home-img">
